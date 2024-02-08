@@ -1,0 +1,188 @@
+
+:root {
+    --primary-color: #595959;
+    --secondary-color: #2c2c2c;
+    --background-color: #fefbf1; 
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 1.25rem 1rem;
+    overflow-x: hidden;
+    max-height: 100%;
+}
+
+/* Color Theme Swatches in Hex
+.Close-up-of-a-stone-or-concrete-wall-painted-in-white,-paint-slightly-peeled-off.-Full-frame-texture-background-in-black-and-white.-1-hex { color: #F2F2F2; }
+.Close-up-of-a-stone-or-concrete-wall-painted-in-white,-paint-slightly-peeled-off.-Full-frame-texture-background-in-black-and-white.-2-hex { color: #D9D9D9; }
+.Close-up-of-a-stone-or-concrete-wall-painted-in-white,-paint-slightly-peeled-off.-Full-frame-texture-background-in-black-and-white.-3-hex { color: #8C8C8C; }
+.Close-up-of-a-stone-or-concrete-wall-painted-in-white,-paint-slightly-peeled-off.-Full-frame-texture-background-in-black-and-white.-4-hex { color: #595959; }
+.Close-up-of-a-stone-or-concrete-wall-painted-in-white,-paint-slightly-peeled-off.-Full-frame-texture-background-in-black-and-white.-5-hex { color: #404040; }
+*/
+
+
+/* Color Theme Swatches in RGBA 
+.Close-up-of-a-stone-or-concrete-wall-painted-in-white,-paint-slightly-peeled-off.-Full-frame-texture-background-in-black-and-white.-1-rgba { color: rgba(242, 242, 242, 1); }
+.Close-up-of-a-stone-or-concrete-wall-painted-in-white,-paint-slightly-peeled-off.-Full-frame-texture-background-in-black-and-white.-2-rgba { color: rgba(216, 216, 216, 1); }
+.Close-up-of-a-stone-or-concrete-wall-painted-in-white,-paint-slightly-peeled-off.-Full-frame-texture-background-in-black-and-white.-3-rgba { color: rgba(140, 140, 140, 1); }
+.Close-up-of-a-stone-or-concrete-wall-painted-in-white,-paint-slightly-peeled-off.-Full-frame-texture-background-in-black-and-white.-4-rgba { color: rgba(89, 89, 89, 1); }
+.Close-up-of-a-stone-or-concrete-wall-painted-in-white,-paint-slightly-peeled-off.-Full-frame-texture-background-in-black-and-white.-5-rgba { color: rgba(63, 63, 63, 1); }
+*/
+
+
+#header-container {
+    display: grid;
+    grid: auto / 1fr 1fr 1fr;
+    width: 100%;
+}
+
+#back-container {
+    grid-column: 1 / 2;
+    display: flex;
+    height: auto;
+    margin-left: 0.75rem;
+}
+
+#back-contents-container {
+    display: inline-flex;
+    align-items: start;
+}
+
+#back-contents-container a {
+    color: var(--secondary-color);
+    margin-left: 2px;
+}
+
+#logo-container {
+    grid-column: 2 / 3;
+    height: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#logo-img {
+    width: 35%;
+    height: auto;
+}
+
+#icon-container {
+    display: inline-flex;
+    grid-column: 3 / 4;
+    justify-self: end;
+    height: 20px;
+    max-width: 100%;
+}
+
+.icon-svg-container {
+    width: fit-content;
+    height: auto;
+}
+
+
+.icon-svg {
+    width: 20px;
+    height: 20px;
+    margin: 0 18px 0 0;
+    fill: var(--secondary-color);
+    opacity: 1;
+}
+
+#mail-svg .icon-svg {
+    margin: 0 0 0 0;
+}
+
+.icon-svg:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 300ms ease-out;
+}
+
+#main-container {
+    display: flex;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+#main-grid-container {
+    width: 100%;
+    white-space: none;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    scrollbar-width: none;
+}
+
+#slider-wrapper {
+    display: grid;
+    grid: auto / repeat(9, 1fr);
+    gap: 0 2rem;
+    max-width: 100%;
+
+}
+
+.grid-item {
+    width: calc(33.33vw - 2rem);
+    height: auto;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-item-cap {
+    height: 3rem;
+    width: auto;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+}
+
+.grid-item p {
+    color: azure;
+    height: auto;
+    width: 100%;
+}
+
+button {
+    background: none;
+    width: auto;
+    height: 2rem;
+    display: flex;
+    position: relative;
+}
+
+#button-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.slide-nav-btn {
+    cursor: pointer;
+}
+
+.slide-nav-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+#next-slide {
+    transform: rotate(180deg);
+    margin-right: 0.75rem;
+    
+}
+
+#prev-slide {
+    margin-left: 0.75rem;
+
+}

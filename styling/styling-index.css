@@ -1,0 +1,525 @@
+:root {
+    --primary-color: #595959;
+    --secondary-color: #2c2c2c;
+    --background-color: #fefbf1; 
+}
+
+html {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+body {
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100%;
+    white-space: none;
+    overflow-x: hidden;
+}
+
+
+
+header {
+    display: grid;
+    grid: 7rem / repeat(3, 1fr);
+    width: 100%;
+    height: 12.5%;
+}
+
+#header-main {
+    grid-column: 2 / 3;
+    width: auto;
+    height: 100%;
+    justify-self: center;
+    
+}
+
+#header-main img {
+    width: auto;
+    height: 100%;
+}
+
+
+#icon-container {
+    display: inline-flex;
+    grid-column: 3 / 4;
+    justify-self: end;
+    height: 20px;
+    max-width: 100%;
+}
+
+.icon-svg-container {
+    width: fit-content;
+    height: auto;
+}
+
+
+.icon-svg {
+    width: 20px;
+    height: 20px;
+    margin: 0 9px;
+    fill: var(--secondary-color);
+    opacity: 1;
+}
+
+.icon-svg:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 300ms ease-out;
+}
+
+#content-wrapper {
+    width: 100%;
+    height: 87.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main-container {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+#mail-container {
+    margin-bottom: 1.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#mail-container a {
+    max-height: 100%;
+    height: 2rem;
+    width: 60.5867347%;
+    display: flex;
+    align-items: center;
+    font-style: none;
+}
+
+#mail-button {
+    font-size: 0.7rem;
+    height: 2rem;
+    width: 100%;
+    background-image: url("./images/main-grid-box/nav-bar-bg-img.png");
+    color: azure;
+    letter-spacing: 0.25rem;
+    word-spacing: 0.25rem;
+    cursor: pointer;
+    transition: letter-spacing 200ms ease-in-out, background-image 200ms ease-in-out;
+}
+
+#mail-button:hover {
+    background-image: url("./images/main-grid-box/nav-bar-bg-img-hover.png");
+    letter-spacing: 0.35rem;
+    transition: letter-spacing 200ms ease-in-out, background-image 200ms ease-in-out;
+}
+
+#mail-container a:active {
+    font-style: none;
+}
+
+#about-me-container-sub {
+    display: none;
+}
+
+#grid-container {
+    display: grid;
+    grid: auto / repeat(4, 1fr);
+    gap: 1.25rem 1.25rem;
+    width: 60.5867347%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#main-container-mobile {
+    display: none;
+}
+
+.grid-item {
+    width: 100%;
+    height: auto;
+}
+
+.grid-item:hover {
+    cursor: pointer;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+#grid-item-big img{
+    width: 100%;
+    height: auto;
+}
+
+#grid-item-one {
+    grid-column: 1 / 2;
+    box-sizing: border-box;
+    display: flex;
+    align-self: start;
+    justify-self: start;
+}
+#grid-item-two {
+    grid-column: 1 / 2;
+    box-sizing: border-box;
+    display: flex;
+    align-self: end;
+    justify-self: start;
+}
+
+#grid-item-big {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#grid-item-three {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+    box-sizing: border-box;
+    display: flex;
+    justify-self: end;
+    align-self: start;
+}
+#grid-item-four {
+    grid-column: 4 / 5;
+    box-sizing: border-box;
+    display: flex;
+    justify-self: end;
+    align-self: end;
+}
+
+#about-me-container {
+    margin-top: 1.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#about-me-container a {
+    max-height: 100%;
+    height: 2rem;
+    width: 60.5867347%;
+    display: flex;
+    align-items: center;
+    font-style: none;
+}
+
+#about-button {
+    font-size: 0.7rem;
+    height: 2rem;
+    width: 100%;
+    background-image: url("./images/main-grid-box/nav-bar-bg-img.png");
+    color: azure;
+    letter-spacing: 0.25rem;
+    word-spacing: 0.25rem;
+    cursor: pointer;
+    transition: letter-spacing 200ms ease-in-out, background-image 200ms ease-in-out;
+}
+
+#about-button:hover {
+    background-image: url("./images/main-grid-box/nav-bar-bg-img-hover.png");
+    letter-spacing: 0.35rem;
+    transition: letter-spacing 200ms ease-in-out, background-image 200ms ease-in-out;
+}
+
+#about-me-container a:active {
+    font-style: none;
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+    header {
+        display: grid;
+        grid: 7.5rem auto / 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    #header-main {
+        grid-column: 1 / 3;
+        max-width: 15.625rem;
+        height: auto;
+        width: 100%;
+        
+    }
+
+    #icon-container {
+        display: flex;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        width: 100%;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.1);
+        height: auto;
+        max-width: 100%;
+        max-height: 1.5625rem;
+        margin-top: 20px;
+    }
+
+    .icon{
+        max-width: 25px;
+        max-height: 25px;
+        margin:0 9px;
+    }
+
+    #main-container {
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 1;
+    }
+    
+    #mail-container {
+        margin: 1.25rem 0;
+        background-color: rgba(0, 0, 0, 0.1);
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #mail-container a {
+        width: 85%;
+        height: 2rem;
+    }
+    
+    #mail-button {
+        font-size: 0.6rem;
+        height: 2rem;
+        width: 100%;
+        background-color: black;
+        color: azure;
+        letter-spacing: 0.125rem;
+        word-spacing: 0.25rem;
+    }
+    
+    #mail-button:hover {
+        background-color: rgb(76, 76, 76);
+        font-size: 0.605rem;
+        cursor: pointer;
+    }
+    
+    #grid-container {
+        width: 85%;
+        height: auto;
+    }
+
+
+    #about-me-container {
+        margin-top: 1.25rem;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+    }
+    
+    #about-me-container a {
+        width: 85%;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        font-style: none;
+    }
+    
+    #about-button {
+        font-size: 0.6rem;
+        height: 2rem;
+        width: 100%;
+        background-color: black;
+        color: azure;
+        letter-spacing: 0.125rem;
+        word-spacing: 0.25rem;
+        cursor: pointer;
+    }
+    
+    #about-button:hover {
+        background-color: rgb(76, 76, 76);
+        font-size: 0.605rem;
+    }
+    
+    #about-me-container a:active {
+        font-style: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    html {
+        height: auto;
+    }
+
+    header {
+        display: grid;
+        grid: 7rem auto / 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 12.5%;
+    }
+
+    #header-main {
+        grid-column: 1 / 3;
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #icon-container {
+        display: flex;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        background-color: rgba(0, 0, 0, 0.1);
+        height: auto;
+        max-width: 100%;
+        max-height: 1.5625rem;
+        margin-top: 20px;
+    }
+
+    .icon{
+        max-width: 25px;
+        max-height: 25px;
+        margin:0 9px;
+        display: flex;
+        align-content: center;
+    }
+
+    .icon-svg-container {
+        display: flex;
+        align-content: center;
+    }
+
+    #main-container-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+    }
+
+    #mail-container {
+        background-color: rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin-top: 1.25rem;
+        margin-bottom: 0;
+    }
+
+    #mail-container a {
+        width: 100%;
+        height: 3.5rem;
+    }
+
+    #mail-button {
+        font-size: 1rem;
+        height: 3.5rem;
+        width: 100%;
+        background-color: black;
+        color: azure;
+        letter-spacing: 0.125rem;
+        word-spacing: 0.25rem;
+    }
+
+    
+    #grid-container {
+        width: 100%;
+        height: auto;
+        grid: auto / repeat(2, 1fr);
+    }
+
+    #grid-item-big {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        width: 100%;
+        height: auto;
+    }
+
+    #grid-item-one {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        width: 100%;
+        height: auto;
+    }
+
+    #grid-item-two {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        width: 100%;
+        height: auto;
+    }
+
+    #grid-item-three {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        width: 100%;
+        height: auto;
+    }
+
+    #grid-item-four {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+        width: 100%;
+        height: auto;
+    }
+
+    #about-me-container {
+        display: none;
+    }
+
+    #about-me-container-sub {
+        background-color: rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 1.25rem 0;
+    }
+
+    #about-me-container-sub a {
+        max-height: 100%;
+        height: 3.5rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-style: none;
+    }
+    
+    #about-button {
+        font-size: 1rem;
+        height: 3.5rem;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        color: azure;
+        letter-spacing: 0.125rem;
+        word-spacing: 0.25rem;
+    }
+    
+}
+
+
+
+

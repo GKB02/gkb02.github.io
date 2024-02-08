@@ -1,0 +1,141 @@
+:root {
+    --primary-color: #595959;
+    --secondary-color: #2c2c2c;
+    --background-color: #fefbf1; 
+    --button-focus: #fffffd;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--background-color);
+    white-space: none;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#header-container {
+    display: grid;
+    grid: 100% / 1fr 1fr 1fr;
+    width: 100%;
+    height: 12.5%;
+}
+
+#back-container {
+    grid-column: 1 / 2;
+    display: flex;
+    height: auto;
+    margin-left: 0.75rem;
+}
+
+#back-contents-container {
+    display: inline-flex;
+    align-items: start;
+}
+
+#back-contents-container a {
+    color: var(--secondary-color);
+    margin-left: 2px;
+}
+
+#logo-container {
+    grid-column: 2 / 3;
+    height: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#logo-img {
+    width: auto;
+    height: 100%;
+    transition: opacity 300ms ease-out;
+}
+
+#logo-img:hover {
+    opacity: 0.5;
+    transition: opacity 300ms ease-out;
+    cursor: pointer;
+}
+
+#icon-container {
+    display: inline-flex;
+    grid-column: 3 / 4;
+    justify-self: end;
+    height: 20px;
+    max-width: 100%;
+}
+
+.icon-svg-container {
+    width: fit-content;
+    height: auto;
+}
+
+
+.icon-svg {
+    width: 20px;
+    height: 20px;
+    margin: 0 18px 0 0;
+    fill: var(--secondary-color);
+    opacity: 1;
+}
+
+.icon-svg:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 300ms ease-out;
+}
+
+#main-container {
+    width: 100%;
+    height: 87.5%;
+    display: flex;
+    justify-content: center;
+}
+
+#grid-container {
+    display: grid;
+    grid: auto / 1fr 2fr;
+    width: 75%;
+    max-height: 100%;
+    column-gap: 2rem;
+}
+
+
+#profile-container {
+    grid-column: 1 / 2;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+}
+
+#profile-container img {
+    width: 100%;
+    height: auto;
+}
+
+#info-container{
+    grid-column: 2 / 3;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#info-container h1 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
